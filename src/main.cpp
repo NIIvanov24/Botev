@@ -11,8 +11,8 @@
  *   main.cpp coordinates startup/shutdown only.
  */
 
-#include "presentation.h"
-#include "data.h"
+#include "../include/presentation.h"
+#include "../include/data.h"
 
 #include <iostream>
 

@@ -7,8 +7,8 @@
  * Only calls logic layer functions - never data layer directly.
  */
 
-#include "presentation.h"
-#include "logic.h"
+#include "../include/presentation.h"
+#include "../include/logic.h"
 
 #include <iostream>
 #include <iomanip>
@@ -198,7 +198,7 @@ void showMainMenu(std::vector<Product>& products) {
 
     while (running) {
         std::cout << "\n=============================\n"
-                  << "  Inventory Management System\n"
+                  << "            BOTEV\n"
                   << "=============================\n"
                   << "1. View All Products\n"
                   << "2. Add Product\n"

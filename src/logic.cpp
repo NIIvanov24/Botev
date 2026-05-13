@@ -3,7 +3,7 @@
  * Logic layer implementation - sorting, searching, recursion, and validation.
  */
 
-#include "logic.h"
+#include "../include/logic.h"
 
 #include <algorithm>
 #include <cctype>
