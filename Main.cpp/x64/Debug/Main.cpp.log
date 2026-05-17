@@ -1,3 +1,64 @@
 ﻿C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(538,5): warning MSB8028: The intermediate directory (x64\Debug\) contains files shared from another project (Main.cpp.vcxproj).  This can lead to incorrect clean and rebuild behavior.
+  data.cpp
+C:\Users\niki1\Desktop\BOTEV\Botev\Botev\include\data.h(21,25): error C7525: inline variables require at least '/std:c++17'
+  (compiling source file '../src/data.cpp')
+  
+C:\Users\niki1\Desktop\BOTEV\Botev\Botev\include\data.h(22,25): error C7525: inline variables require at least '/std:c++17'
+  (compiling source file '../src/data.cpp')
+  
+C:\Users\niki1\Desktop\BOTEV\Botev\Botev\include\data.h(23,26): error C7525: inline variables require at least '/std:c++17'
+  (compiling source file '../src/data.cpp')
+  
+  logic.cpp
+C:\Users\niki1\Desktop\BOTEV\Botev\Botev\include\data.h(21,25): error C7525: inline variables require at least '/std:c++17'
+  (compiling source file '../src/logic.cpp')
+  
+C:\Users\niki1\Desktop\BOTEV\Botev\Botev\include\data.h(22,25): error C7525: inline variables require at least '/std:c++17'
+  (compiling source file '../src/logic.cpp')
+  
+C:\Users\niki1\Desktop\BOTEV\Botev\Botev\include\data.h(23,26): error C7525: inline variables require at least '/std:c++17'
+  (compiling source file '../src/logic.cpp')
+  
+  main.cpp
+C:\Users\niki1\Desktop\BOTEV\Botev\Botev\include\data.h(21,25): error C7525: inline variables require at least '/std:c++17'
+  (compiling source file '../src/main.cpp')
+  
+C:\Users\niki1\Desktop\BOTEV\Botev\Botev\include\data.h(22,25): error C7525: inline variables require at least '/std:c++17'
+  (compiling source file '../src/main.cpp')
+  
+C:\Users\niki1\Desktop\BOTEV\Botev\Botev\include\data.h(23,26): error C7525: inline variables require at least '/std:c++17'
+  (compiling source file '../src/main.cpp')
+  
+C:\Users\niki1\Desktop\BOTEV\Botev\Botev\include\ui.h(27,10): error C1083: Cannot open include file: 'raylib.h': No such file or directory
+  (compiling source file '../src/main.cpp')
+  
   presentation.cpp
-  Main.cpp.vcxproj -> C:\Users\niki1\Desktop\BOTEV\Botev\Botev\x64\Debug\Botev.exe
+C:\Users\niki1\Desktop\BOTEV\Botev\Botev\include\data.h(21,25): error C7525: inline variables require at least '/std:c++17'
+  (compiling source file '../src/presentation.cpp')
+  
+C:\Users\niki1\Desktop\BOTEV\Botev\Botev\include\data.h(22,25): error C7525: inline variables require at least '/std:c++17'
+  (compiling source file '../src/presentation.cpp')
+  
+C:\Users\niki1\Desktop\BOTEV\Botev\Botev\include\data.h(23,26): error C7525: inline variables require at least '/std:c++17'
+  (compiling source file '../src/presentation.cpp')
+  
+C:\Users\niki1\Desktop\BOTEV\Botev\Botev\src\presentation.cpp(146,9): error C2660: 'addNewProduct': function does not take 4 arguments
+      C:\Users\niki1\Desktop\BOTEV\Botev\Botev\include\logic.h(89,6):
+      see declaration of 'addNewProduct'
+      C:\Users\niki1\Desktop\BOTEV\Botev\Botev\src\presentation.cpp(146,9):
+      while trying to match the argument list '(std::vector<Product,std::allocator<Product>>, std::string, double, int)'
+  
+  ui.cpp
+C:\Users\niki1\Desktop\BOTEV\Botev\Botev\include\data.h(21,25): error C7525: inline variables require at least '/std:c++17'
+  (compiling source file '../src/ui.cpp')
+  
+C:\Users\niki1\Desktop\BOTEV\Botev\Botev\include\data.h(22,25): error C7525: inline variables require at least '/std:c++17'
+  (compiling source file '../src/ui.cpp')
+  
+C:\Users\niki1\Desktop\BOTEV\Botev\Botev\include\data.h(23,26): error C7525: inline variables require at least '/std:c++17'
+  (compiling source file '../src/ui.cpp')
+  
+C:\Users\niki1\Desktop\BOTEV\Botev\Botev\include\ui.h(27,10): error C1083: Cannot open include file: 'raylib.h': No such file or directory
+  (compiling source file '../src/ui.cpp')
+  
+  Generating Code...

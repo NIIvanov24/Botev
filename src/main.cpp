@@ -1,31 +1,40 @@
 /*
  * main.cpp
- * Entry point for the Inventory Management System.
+ * ========
+ * Entry point for the BOTEV Inventory System — Raylib Edition.
  *
  * Responsibilities:
  *   1. Load product data from disk (Data layer).
- *   2. Launch the main menu (Presentation layer).
- *   3. Save data on exit (Data layer).
+ *   2. Hand off to the Raylib application loop (Presentation layer).
+ *   3. Persist any changes on clean exit (Data layer).
  *
- * Architecture: Presentation -> Logic -> Data
- *   main.cpp coordinates startup/shutdown only.
+ * Architecture:  main.cpp  →  ui.cpp  →  logic.cpp  →  data.cpp
+ *   main.cpp coordinates startup and shutdown only.
+ *   All UI, logic, and data handling is delegated to the respective layers.
  */
 
-#include "../include/presentation.h"
+#include "../include/ui.h"
 #include "../include/data.h"
 
-#include <iostream>
+#include <cstdlib>        // for std::system (mkdir cross-platform)
+#include <filesystem>     // C++17
+
+namespace fs = std::filesystem;
 
 int main() {
-    // Load existing products from file
+    // Ensure the assets directory exists (first-run safety)
+    if (!fs::exists("assets")) {
+        fs::create_directory("assets");
+    }
+
+    // --- Data Layer: load ---
     std::vector<Product> products = loadProducts();
 
-    // Start the main menu loop (presentation layer drives everything)
-    showMainMenu(products);
+    // --- Presentation Layer: run Raylib application ---
+    runApplication(products);
 
-    // Persist any changes made during the session
+    // --- Data Layer: persist on clean exit ---
     saveProducts(products);
 
-    std::cout << "Goodbye!\n";
     return 0;
 }
