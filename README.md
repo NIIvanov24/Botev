@@ -3185,4 +3185,3 @@ Output
 exit code 0
 Done
 
-You are out of free messages until 5:20 AM
